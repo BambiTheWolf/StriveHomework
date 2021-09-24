@@ -24,14 +24,32 @@ console.log(rectangleArea)
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const crazySum = function(value1, value2) {
+    if (value1 === value2) {
+        result = (value1 + value2) * 3 
+        return result
+    } else {
+        result = value1 + value2
+        return result
+    }
+}
+let crazySumResult = crazySum(5, 10)
+console.log(crazySumResult)
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const crazyDiff = function(value1) {
+    if (value1 <= 19) {
+        return Math.abs(value1 - 19)
+    } else {
+        return Math.abs(value1 - 19) * 3
+    }
+}
+let crazyDiffResult = crazyDiff(20)
+console.log(crazyDiffResult)
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
