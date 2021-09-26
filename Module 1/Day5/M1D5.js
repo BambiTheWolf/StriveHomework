@@ -70,38 +70,108 @@ console.log(boundaryResult);
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const strivify = function (str) {
+    if (str.startsWith("Strive") /* true / false */) {
+      return str;
+    } else {
+      return "Strive " + str;
+    }
+  };
+  /* 
+const striviy = function(str) {
+  return str.startsWith("Strive") ? str : "Strive" + str 
+}
+*/
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
 
-/* WRITE YOUR ANSWER HERE */
+const check3and7 = function (n) {
+    if (n >= 0 && (n % 3 === 0 || n % 7 === 0)) {
+      //n is more than 0 
+      //n / 3 === reminder of 0 OR n / 7 reminder of 0
+      return true;
+    } else {
+      return false;
+    }
+  };
+  // const check3and7 = (n) =>
+  //   n >= 0 && (n % 3 === 0 || n % 7 === 0) ? true : false;
+  // const check3and7 = function(n) {
+  //   return n >= 0 && (n % 3 === 0 || n%7 === 7) ? true : false
+  // }
+  console.log(check3and7(20));
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR ANSWER HERE */
+const reverseString = function (str) {
+    return str.split("").reverse("").join("");
+  
+    //let splitString = str.split("")
+    //let reverseString = splitString.reverse()
+    //let finalString = reverseString.join("")
+  };
+  console.log(reverseString("Strive"));
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+// const upperFirst = function (str) { //works for one word only
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+//   /* 
+//     let firstChar = str.chatAt(0) 
+//     let uppercaseChar = firstChar.toUpperCase()
+//     let cutString = str.slice(1)
+//     return uppercaseChar + cutString
+//   */
+// };
+// console.log(upperFirst("strivers"));
+
+const upperFirstPhrase = function(str) { //phrase as param
+    let words = str.split(" ")
+    let finalString = []
+    for(let i = 0; i < words.length; i++) {
+      let firstChar = words[i].charAt(0)
+      console.log(firstChar)
+      let uppercaseChar = firstChar.toUpperCase()
+      let cutString = words[i].slice(1)
+      let finalWord = uppercaseChar + cutString
+      finalString.push(finalWord)
+    }
+    console.log(finalString.join(""))
+  }
+  
+  upperFirstPhrase("hello world")
+  
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const cutString = function (str) {
+    return str.slice(1, str.length - 1); //.slice(1,-1) works as well
+  };
+  console.log(cutString("strive"));
+  
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const giveMeRandom = function (n) {
+    const arr = [];
+    for (let i = 0; i <= n; i++) {
+      arr.push(Math.floor(Math.random() * 10));
+    }
+    return arr;
+  };
+  console.log(giveMeRandom(5));
+  
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
