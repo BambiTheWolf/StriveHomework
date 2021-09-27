@@ -121,11 +121,33 @@ console.log(onlyLetters("I L0V3 B3RL1N"));
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
-
+// const isThisAnEmail = function(str) {
+//     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+//     if(str.value.match(mailformat))
+//     {
+//     alert("Valid email address!");
+//     document.form1.text1.focus();
+//     return true;
+//     }
+//     else
+//     {
+//     alert("You have entered an invalid email address!");
+//     document.form1.text1.focus();
+//     return false;
+//     }
+// }
+/*Didn't really understand how to make this work */
 
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
 */
+
+const whatDayIsIt = function() {
+    let setupDate = new Date();
+    let currentDay = setupDate.getDay();
+    return currentDay
+}
+console.log(whatDayIsIt());
 
 /* EXERCISE 8
     Write a function called rollTheDices which receives a number as a parameter.
@@ -137,6 +159,13 @@ console.log(onlyLetters("I L0V3 B3RL1N"));
         values: [3, 3, 4]
     }
 */
+
+const rollTheDices = function(n) {
+    const rolls = {
+    }
+    rolls.sum = 
+    rolls.values = []
+}
 
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
