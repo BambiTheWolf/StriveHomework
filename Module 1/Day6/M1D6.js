@@ -62,31 +62,66 @@ me.skills.pop();
     Write a function called dice; it should randomize an integer number between 1 and 6.
 */
 
-const dice = function()
+const dice = function() {
+    return Math.ceil(Math.random() * 6)
+}
+console.log("The dice rolled:", dice());
 
 
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
 
+const whoIsBigger = function(a, b) {
+    if(a < b) {
+        return b
+    } else {
+        return a
+    }
+}
+console.log("The biggest number is:", whoIsBigger(34, 10));
+
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
+
+const splitMe = function(str) {
+    let splittedString = str.split(" ")
+    return splittedString
+}
+console.log(splitMe("Madonna che fame"));
 
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
 
+const deleteOne = function(str, boolean) {
+    if (boolean === true) {
+        return str.substring(1);
+    } else {
+        return str.slice(0, -1)
+    }
+}
+console.log(deleteOne("Frate", false));
+
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
 
+const onlyLetters = function(str) {
+    let withNoDigits = str.replace(/[0-9]/g, '');
+    return withNoDigits
+}
+console.log(onlyLetters("I L0V3 B3RL1N"));
+
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
+
+
 
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
