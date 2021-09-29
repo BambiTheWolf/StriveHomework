@@ -29,7 +29,7 @@
 
       <a href="strive.school">This link goes to Strive School</a>
 
-      <div>
+      <div id="firstDiv">
         <p>This text is just for the exercise</p>
       </div>
 
@@ -74,6 +74,7 @@
 
       const changePcontent = function () {
         //
+        document.getElementById("firstDiv").childNodes[1].nodeValue = "new text"
       };
 
       /* EXERCISE 4
