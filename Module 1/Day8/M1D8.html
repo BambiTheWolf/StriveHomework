@@ -76,10 +76,13 @@
       */
 
       const changePcontent = function () {
-        //
         const paragraphs = document.querySelectorAll("div p");
-        for (let i = 0; i < )
+        for (let i = 0; i < paragraphs.length; i++) {
+          const pEl = paragraphs[i];
+          pEl.innerText = "The best text ever"
+        }
       };
+      changePcontent();
 
       /* EXERCISE 4
        Write a function for changing the href property of every link to https://www.google.com
