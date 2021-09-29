@@ -55,9 +55,10 @@
       */
 
       const changeTitle = function (newTitle) {
-        //
-        document.title = newTitle
+        const title = document.querySelector("h1");
+        title.innerText = newTitle;
       };
+      changeTitle("New Title");
 
       /* EXERCISE 2
        Write a function for changing the class of the title of the page in "myHeading".
