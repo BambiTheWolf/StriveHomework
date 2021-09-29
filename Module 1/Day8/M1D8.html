@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1 id=myTitle>This is the title of the page</h1>
+      <h1 class="'myClass">This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </header>
 
@@ -58,16 +58,18 @@
         const title = document.querySelector("h1");
         title.innerText = newTitle;
       };
-      changeTitle("New Title");
+      changeTitle("Best Page Ever");
 
       /* EXERCISE 2
        Write a function for changing the class of the title of the page in "myHeading".
       */
 
       const addClassToTitle = function () {
-        //
-        document.getElementById("myTitle").className = "MyHeading";
+        const title = document.querySelector("h1");
+        title.classList.remove("myClass");
+        title.classList.add("myHeading");
       };
+      addClassToTitle();
 
       /* EXERCISE 3
        Write a function for changing the text of only the p which are children of a div.
