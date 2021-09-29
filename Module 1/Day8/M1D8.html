@@ -89,8 +89,13 @@
       */
 
       const changeUrls = function () {
-        //
+        const links = document.querySelectorAll("a");
+        for (let i = 0; i < links.length; i++) {
+          const a = links[i];
+          a.href = "https://www.google.com"
+        }
       };
+      changeUrls();
 
       /* EXERCISE 5
        Write a function for adding a new list item in the second unordered list.
