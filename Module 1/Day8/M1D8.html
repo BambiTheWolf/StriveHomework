@@ -102,8 +102,10 @@
       */
 
       const addToTheSecond = function (content) {
-        //
+        const ul = document.getElementById("secondList");
+        ul.innerHTML += `<li>${content}</li>`;
       };
+      addToTheSecond("The best item ever");
 
       /* EXERCISE 6
        Write a function for adding a second paragraph to the first div.
