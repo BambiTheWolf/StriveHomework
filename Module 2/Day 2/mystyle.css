@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(45deg, rgb(77, 28, 0) 0%, rgb(116, 81, 67) 100%);
+    background-attachment: fixed;
+    color: white;
+}
+
+section {
+    min-height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* EXERCISE 1
+For all Albums we'd like to have a consistent style.
+Create a class for:
+- The album container
+- The album cover
+- The album title
+- The album group / singer / dj
+- The album genre
+- The album duration
+- etc
+*/
+
+.album-container {
+    text-align: center;
+    padding-bottom: 1em;
+    margin: 1em;
+}
+
+.album-container img {
+    width: 100%;
+}
+
+.album-artist:after {
+    content: ' • '
+}
+
+.album-title {
+    margin-top: 0.50em;
+    margin-bottom: 0.25em;
+    font-size: 1.3em
+}
+
+.album-genre {
+
+}
+
+/* Ex 2 */
+
+nav  {
+    background-color: rgba(26, 16, 34, 0.72);
+    height: 7vh;
+}
+
+/* EX 6 */
+
+.carousel-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: lowercase;
+    color: #d1d1d1;
+    mix-blend-mode: color-burn;
+    font-weight: 900;
+}
+
+/* Ex 7 */
+.album-tapestry {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.squared {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
