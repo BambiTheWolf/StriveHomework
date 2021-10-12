@@ -27,9 +27,21 @@
         .blog-header * {
             background-color: lawngreen;
         }
+
+        /*EX3) Write a selector to target the "continue reading..." inside the jumbotron*/
+
+        .jumbotron p:last-of-type > a {
+                color: seagreen !important;
+            } 
+                
+        /*EX4) Write a selector to target the first blogpost*/
+
+        main .blog-post:first-of-type {
+            color: sienna;
+        }
+
+
         /*
-            EX3) Write a selector to target the "continue reading..." inside the jumbotron
-            EX4) Write a selector to target the first blogpost
             EX5) Write a selector to target the "even" links in the navbar
             EX6) Write a selector to target the last blog post
             EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
