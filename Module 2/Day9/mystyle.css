@@ -11,17 +11,11 @@ section {
     justify-content: center;
 }
 
-/* EXERCISE 1
-For all Albums we'd like to have a consistent style.
-Create a class for:
-- The album container
-- The album cover
-- The album title
-- The album group / singer / dj
-- The album genre
-- The album duration
-- etc
-*/
+.jumbotron {
+    background-color: rgba(26, 16, 34, 0.72);
+    background-attachment: fixed;
+    color: white;
+}
 
 .album-container {
     text-align: center;
@@ -47,14 +41,10 @@ Create a class for:
 
 }
 
-/* Ex 2 */
-
 nav  {
     background-color: rgba(26, 16, 34, 0.72);
     height: 7vh;
 }
-
-/* EX 6 */
 
 .carousel-title {
     position: absolute;
@@ -67,7 +57,6 @@ nav  {
     font-weight: 900;
 }
 
-/* Ex 7 */
 .album-tapestry {
     display: flex;
     flex-wrap: wrap;
