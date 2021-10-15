@@ -66,16 +66,14 @@ Make sure you check the documentation before creting anything custom.
         Make it appear with a fade-in animation effect when the page loads.
     -->
 
-    <section class="">
-        <div class="row">
-            <div class="col-9">
-                <div class="jumbotron">
-                    <h1 class="display-4">I'm a JUMBOTRON!</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ratione nisi vel corrupti harum, repellendus labore dignissimos dolor nihil quod veniam atque excepturi earum nulla dolorem odit ad totam unde.</p>
-                    <hr class="my-4">
-                    <p>No, I'm not a robot.</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Join the Jumbotrons</a>
-                </div>
+    <section id="jumbo-intro" class="position-relative"">
+        <div class="container">
+            <div class="jumbotron bg-transparent">
+                <h1 class="display-4">I'm a JUMBOTRON!</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ratione nisi vel corrupti harum, repellendus labore dignissimos dolor nihil quod veniam atque excepturi earum nulla dolorem odit ad totam unde.</p>
+                <hr class="my-4">
+                <p>No, I'm not a robot.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Join the Jumbotrons</a>
             </div>
         </div>
     </section>
@@ -85,75 +83,107 @@ Make sure you check the documentation before creting anything custom.
         Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
     -->
 
-
+    <!-- EXERCISE 3
+        Foreach album in the favorite list, place a badge on the top-left corner of the album with the genre of the music
+    -->
   
     <!-- Responsive section -->
     
     <section id="fav-albums">
       <div class="container">
           <div class="row py-5">
-              <div class="col-6 col-md-4 col-lg-3">
+              <div class="col-6 col-md-4 col-lg-3 h-100">
                   <div class="album-container">
-                      <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
-                      <h4 class="album-title">Black Holes and Revelations</h4>
-                      <span class="album-artist">Muse</span>
-                      <span class="album-genre">Rock</span>
+                      <div class="card bg-custom h-100">
+                        <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
+                        <h4 class="album-title">Lorem & ipsum</h4>
+                        <span class="album-artist">Lorem</span>
+                        <span class="badge bg-purple p-2">ipsum</span>
+                      </div>  
                   </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                   <div class="album-container">
-                      <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
-                      <h4 class="album-title">End of Aquarius</h4>
-                      <span class="album-artist">Droid Bishop</span>
-                      <span class="album-genre">Synthwave</span>
+                      <div class="card bg-custom">
+                        <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
+                        <div class="card-body">
+                            <h4 class="album-title">End of Aquarius</h4>
+                            <span class="album-artist">Droid Bishop</span>
+                            <span class="badge bg-purple p-2">Synthwave</span>
+                        </div>
+                      </div>  
                   </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                   <div class="album-container">
-                      <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
-                      <h4 class="album-title">Crystal Castles II</h4>
-                      <span class="album-artist">Crystal Castles</span>
-                      <span class="album-genre">Power Electronics</span>
+                    <div class="card bg-custom">
+                        <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
+                        <div class="card-body">
+                            <h4 class="album-title">End of Aquarius</h4>
+                            <span class="album-artist">Droid Bishop</span>
+                            <span class="badge bg-purple p-2">Synthwave</span>
+                        </div>
+                    </div>  
                   </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                   <div class="album-container">
-                      <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
-                      <h4 class="album-title">It Takes A Thief</h4>
-                      <span class="album-artist">Thievery Corporation</span>
-                      <span class="album-genre">Acid Jazz</span>
+                    <div class="card bg-custom">
+                        <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
+                        <div class="card-body">
+                            <h4 class="album-title">End of Aquarius</h4>
+                            <span class="album-artist">Droid Bishop</span>
+                            <span class="badge bg-purple p-2">Synthwave</span>
+                        </div>
+                    </div>  
                   </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                   <div class="album-container">
-                      <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
-                      <h4 class="album-title">Black Holes and Revelations</h4>
-                      <span class="album-artist">Muse</span>
-                      <span class="album-genre">Rock</span>
+                    <div class="card bg-custom">
+                        <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
+                        <div class="card-body">
+                            <h4 class="album-title">End of Aquarius</h4>
+                            <span class="album-artist">Droid Bishop</span>
+                            <span class="badge bg-purple p-2">Synthwave</span>
+                        </div>
+                    </div>  
                   </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                   <div class="album-container">
-                      <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
-                      <h4 class="album-title">End of Aquarius</h4>
-                      <span class="album-artist">Droid Bishop</span>
-                      <span class="album-genre">Synthwave</span>
+                    <div class="card bg-custom">
+                        <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
+                        <div class="card-body">
+                            <h4 class="album-title">End of Aquarius</h4>
+                            <span class="album-artist">Droid Bishop</span>
+                            <span class="badge bg-purple p-2">Synthwave</span>
+                        </div>
+                    </div>  
                   </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                   <div class="album-container">
-                      <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
-                      <h4 class="album-title">Crystal Castles II</h4>
-                      <span class="album-artist">Crystal Castles</span>
-                      <span class="album-genre">Power Electronics</span>
+                    <div class="card bg-custom">
+                        <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
+                        <div class="card-body">
+                            <h4 class="album-title">End of Aquarius</h4>
+                            <span class="album-artist">Droid Bishop</span>
+                            <span class="badge bg-purple p-2">Synthwave</span>
+                        </div>
+                    </div>  
                   </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                   <div class="album-container">
-                      <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
-                      <h4 class="album-title">It Takes A Thief</h4>
-                      <span class="album-artist">Thievery Corporation</span>
-                      <span class="album-genre">Acid Jazz</span>
+                    <div class="card bg-custom">
+                        <img src="https://source.unsplash.com/random/200x200" class="img-fluid">
+                        <div class="card-body">
+                            <h4 class="album-title">End of Aquarius</h4>
+                            <span class="album-artist">Droid Bishop</span>
+                            <span class="badge bg-purple p-2">Synthwave</span>
+                        </div>
+                    </div>  
                   </div>
               </div>
           </div>
@@ -172,7 +202,7 @@ Make sure you check the documentation before creting anything custom.
                 </div>
                 <div class="col-12 col-md-8">
                     <div class="d-flex flex-column justify-content-center h-100">
-                        <h4>Gotan Project - La Revancha Del Tango</h4>
+                        <h4>Lorem</h4>
                         <div>
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         </div>
@@ -200,14 +230,14 @@ Make sure you check the documentation before creting anything custom.
               <div class="col-6 col-md-4">
                   <div class="album-container">
                       <img src="https://source.unsplash.com/random/250x250" class="img-fluid">
-                      <h4 class="album-title">Terrible Album #1</h4>
+                      <h4 class="album-title">Terrible Album #2</h4>
                       <span>this album is terrible because yes.</span>
                   </div>
               </div>
               <div class="col-6 col-md-4">
                   <div class="album-container">
                       <img src="https://source.unsplash.com/random/250x250" class="img-fluid">
-                      <h4 class="album-title">Terrible Album #1</h4>
+                      <h4 class="album-title">Terrible Album #3</h4>
                       <span>this album is terrible because yes.</span>
                   </div>
               </div>
@@ -310,9 +340,7 @@ Make sure you check the documentation before creting anything custom.
 
     
 
-    <!-- EXERCISE 3
-        Foreach album in the favorite list, place a badge on the top-left corner of the album with the genre of the music
-    -->
+    
 
     <!-- EXERCISE 4
         Create a new section with an album tracklist inside a Bootstrap table.

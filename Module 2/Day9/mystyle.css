@@ -16,7 +16,7 @@ section {
     background-attachment: fixed;
     color: white;
     animation-name: fade-in;
-    animation-duration: 3s;
+    animation-duration: 3ss;
 }
 
 .album-container {
