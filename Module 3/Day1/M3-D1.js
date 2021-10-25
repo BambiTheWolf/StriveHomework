@@ -64,7 +64,7 @@ function isInRange(n1, n2) {
     }
 }
 
-console.log(isInRange(8, 45));
+console.log(isInRange(80, 45));
 
 
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
