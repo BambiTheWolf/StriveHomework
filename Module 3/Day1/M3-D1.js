@@ -8,7 +8,7 @@ function sumIntegers(n1, n2) {
     }
 }
 
-console.log(sumIntegers(2, 2));
+console.log("1. " + sumIntegers(2, 2));
 
 
 /* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
@@ -21,7 +21,7 @@ function check50(n1, n2) {
     }
 }
 
-console.log(check50(13, 50));
+console.log("2. " + check50(13, 50));
 
 
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
@@ -31,7 +31,7 @@ function removeCharacter(index, string) {
     return str
 }
 
-console.log(removeCharacter(4, "Hello Strive!"));
+console.log("3. " + removeCharacter(4, "Hello Strive!"));
 
 
 /* 4. Create a function to find and return the largest of three given integers. */
@@ -50,33 +50,53 @@ function biggestNumber(n1, n2, n3) {
     }
 }
 
-console.log(biggestNumber(22.5, 6, 22));
+console.log("4. " + biggestNumber(22.5, 6, 22));
 
 
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
     Return `true` if they do, return `false` if one (or both) don't. */
 function isInRange(n1, n2) {
-    if((n1 >= 40 && n1 <= 60 || n1 >= 70 && n1 <= 100) && (n2 >= 40 && n2 <= 60 || n2 >= 70 && n2 <= 100)) {
-        return true
+
+    const inRange = (n) => (n >= 40 && n <= 60 || n >= 70 && n <= 100)
+    return inRange(n1) && inRange(n2)
+}
+
+console.log("5. " + isInRange(12, 50));
+
+
+/* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
+    Pass the string and the number of copies as parameters. */
+function copyString(string, n) {
+    let newString = ""
+
+    for (let i = 0; i < n; i++) {
+        newString += string
+    }
+    return newString
+}
+
+console.log("6. " + copyString("Strive", 5));
+
+
+/* 7. Create a function to display the city name if the string begins with "Los" or "New". 
+    Pass the city name as a parameter. Return `false` if they start with a different string. */
+function cityName(string) {
+    let firstChar = string.slice(0, 3);
+
+    if (firstChar.toLowerCase() === "los" || firstChar.toLowerCase() === "new") {
+        return string;
     }
     else {
         return false
     }
 }
 
-console.log(isInRange(80, 50));
-
-
-/* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
-    Pass the string and the number of copies as parameters. */
-
-
-/* 7. Create a function to display the city name if the string begins with "Los" or "New". 
-    Pass the city name as a parameter. Return `false` if they start with a different string. */
+console.log("7. " + cityName("New Torino"));
 
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
     Pass the array as a parameter. */
+
 
 
 /* 9. Create a function to test if an array of lenght 2 contains 1 OR 3. 
