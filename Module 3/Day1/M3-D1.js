@@ -1,17 +1,70 @@
 /* 1. Create a function to calculate the sum of the two given integers. If the two values are the same, return triple their sum. */
+function sumIntegers(n1, n2) {
+    if(n1 === n2) {
+        return n1 * 3
+    }
+    else {
+        return n1 + n2
+    }
+}
+
+console.log(sumIntegers(2, 2));
 
 
 /* 2. Create a function to check two given integers. Return `true` if one of them is 50 or if their sum is 50. */
+function check50(n1, n2) {
+    if(n1 === 50 || n2 === 50 || n1 + n2 === 50) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+console.log(check50(13, 50));
 
 
 /* 3. Create a function to remove a character at a specified position from a given string: pass the position and the string as parameters, return the new string. */
+function removeCharacter(index, string) {
+    let str = string
+    str = str.replace(str[index],'')
+    return str
+}
+
+console.log(removeCharacter(4, "Hello Strive!"));
 
 
 /* 4. Create a function to find and return the largest of three given integers. */
+function biggestNumber(n1, n2, n3) {
+    if(n1 > n2 && n1 > n3) {
+        return n1
+    }
+    else if(n2 > n1 && n2 > n3) {
+        return n2
+    }
+    else if(n3 > n1 && n3 > n2) {
+        return n3
+    }
+    else {
+        return "Error, two or more equal number!"
+    }
+}
+
+console.log(biggestNumber(22.5, 6, 22));
 
 
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
     Return `true` if they do, return `false` if one (or both) don't. */
+function isInRange(n1, n2) {
+    if((40 < n1 < 60 && 70 < n1 < 100) && (40 < n2 < 60 && 70 < n2 < 100)) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+console.log(isInRange(8, 45));
 
 
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
