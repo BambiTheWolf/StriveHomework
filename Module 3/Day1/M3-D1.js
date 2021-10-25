@@ -56,7 +56,7 @@ console.log(biggestNumber(22.5, 6, 22));
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
     Return `true` if they do, return `false` if one (or both) don't. */
 function isInRange(n1, n2) {
-    if((40 < n1 < 60 && 70 < n1 < 100) && (40 < n2 < 60 && 70 < n2 < 100)) {
+    if((n1 >= 40 && n1 <= 60 || n1 >= 70 && n1 <= 100) && (n2 >= 40 && n2 <= 60 || n2 >= 70 && n2 <= 100)) {
         return true
     }
     else {
@@ -64,7 +64,7 @@ function isInRange(n1, n2) {
     }
 }
 
-console.log(isInRange(80, 45));
+console.log(isInRange(80, 50));
 
 
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
