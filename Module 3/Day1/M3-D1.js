@@ -96,11 +96,31 @@ console.log("7. " + cityName("New Torino"));
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
     Pass the array as a parameter. */
+function arrayCalculator(array) {
+    let calculatedArray = 0
+    for (let i = 0; i < array.length; i++) {
+        calculatedArray += array[i];
+    }
+    return calculatedArray
+}
 
+console.log("8. " + arrayCalculator([100, 2, 4]));
 
 
 /* 9. Create a function to test if an array of lenght 2 contains 1 OR 3. 
     Return `true` is it does, `false` if it doesn't. */
+function  array1Or3(array) {
+    let is1Or3 = false
+
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] === 1 || array[i] === 3) {
+            is1Or3 = true
+        }
+    }
+    return is1Or3
+}
+
+console.log("9. " + array1Or3([45, 4]));
 
 
 /* 10. Create a function to test if an array of lenght 2 DOES NOT contain 1 or 3. 
