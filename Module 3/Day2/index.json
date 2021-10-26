@@ -1,0 +1,66 @@
+{
+    "results":[
+       {
+          "gender":"female",
+          "name":{
+             "title":"Ms",
+             "first":"Kim",
+             "last":"Brooks"
+          },
+          "location":{
+             "street":{
+                "number":5707,
+                "name":"Homestead Rd"
+             },
+             "city":"Port Macquarie",
+             "state":"Australian Capital Territory",
+             "country":"Australia",
+             "postcode":5925,
+             "coordinates":{
+                "latitude":"-82.4485",
+                "longitude":"108.0177"
+             },
+             "timezone":{
+                "offset":"+5:00",
+                "description":"Ekaterinburg, Islamabad, Karachi, Tashkent"
+             }
+          },
+          "email":"kim.brooks@example.com",
+          "login":{
+             "uuid":"81ea96a0-c515-4ee6-a37c-35082e93ce99",
+             "username":"silverduck434",
+             "password":"jetski",
+             "salt":"thv46z4o",
+             "md5":"aae0aad518c3a312700b96ad1ec6648f",
+             "sha1":"9a2abd4b8d134185d2deeee659d7e8f23cfccc5d",
+             "sha256":"69f4dbd02e9ad7abaf18d89f248dd24decba5162e25416f2f093d25ca3ae38ee"
+          },
+          "dob":{
+             "date":"1945-07-15T15:37:05.913Z",
+             "age":76
+          },
+          "registered":{
+             "date":"2011-04-23T04:50:43.422Z",
+             "age":10
+          },
+          "phone":"09-6278-6626",
+          "cell":"0446-622-579",
+          "id":{
+             "name":"TFN",
+             "value":"319041946"
+          },
+          "picture":{
+             "large":"https://randomuser.me/api/portraits/women/17.jpg",
+             "medium":"https://randomuser.me/api/portraits/med/women/17.jpg",
+             "thumbnail":"https://randomuser.me/api/portraits/thumb/women/17.jpg"
+          },
+          "nat":"AU"
+       }
+    ],
+    "info":{
+       "seed":"4fb70c973bd0967a",
+       "results":1,
+       "page":1,
+       "version":"1.3"
+    }
+ }
