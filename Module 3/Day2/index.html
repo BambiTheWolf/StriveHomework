@@ -9,10 +9,10 @@
 <body>
 
     <script>
-        fetch("https://randomuser.me/api/").then((resp) =>)
-        <div class="card">
-
-        </div>
+        fetch("https://randomuser.me/api/").then((resp) => resp.json()).then(data => {
+            console.log(data)
+            
+        })
     </script>
 </body>
 </html>
