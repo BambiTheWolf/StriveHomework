@@ -97,7 +97,7 @@ aria-label="Placeholder: Thumbnail"
 const loadSecondaryImages = () => {
 fetch("https://api.pexels.com/v1/search?query=music", {
   headers: {
-    Authorization: "563492ad6f91700001000001f8aad667e1dc4c36b6963f98bdd6e0cf",
+    Authorization: "563492ad6f91700001000001b9406f01e7904a2b809ef02e997c1a49",
   },
 })
   .then((jsonData) => {
