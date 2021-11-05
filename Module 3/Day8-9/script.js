@@ -47,8 +47,7 @@
 
 // }
 
-<script>
-    const BASE_URL = "https://striveschool-api.herokuapp.com/api/product";
+const BASE_URL = "https://striveschool-api.herokuapp.com/api/product";
     const headers = new Headers({
       "Content-Type": "application/json",
       Authorization:
@@ -82,4 +81,3 @@
         }
       });
     };
-  </script>
