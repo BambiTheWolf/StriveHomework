@@ -2,7 +2,7 @@ import React from "react";
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
 
-export default function Welcome() {
+export const Welcome = () => {
     return <Jumbotron>
         <h1>Welcome to StriveBooks</h1>
         <p>

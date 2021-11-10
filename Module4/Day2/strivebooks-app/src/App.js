@@ -2,9 +2,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MyNavbar from './components/MyNavbar';
 import MyFooter from './components/MyFooter';
-import Welcome from './components/Welcome';
+import { Welcome } from './components/Welcome';
 import LatestReleases from './components/LatestRelease';
 import WarningSign from './components/WarningSign';
+import MyBadge from './components/MyBadge';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <MyFooter />
       <Welcome />
       <WarningSign name="I'm a warning message!" />
+      <MyBadge text="Badge" color="success" />
       <LatestReleases />
     </div>
   );
