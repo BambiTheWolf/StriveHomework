@@ -4,6 +4,7 @@ import MyNavbar from './components/MyNavbar';
 import MyFooter from './components/MyFooter';
 import Welcome from './components/Welcome';
 import LatestReleases from './components/LatestRelease';
+import WarningSign from './components/WarningSign';
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <MyNavbar brand= "StriveBooks" />
       <MyFooter />
       <Welcome />
+      <WarningSign name="I'm a warning message!" />
       <LatestReleases />
     </div>
   );
