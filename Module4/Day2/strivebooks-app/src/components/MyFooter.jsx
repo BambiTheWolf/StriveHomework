@@ -1,13 +1,8 @@
-import { Container } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React from 'react'
 
 const MyFooter = () => (
-    <footer className="footer">
-        <Container>
-            <span>
-                Small talks on books.
-            </span>
-        </Container>
+    <footer className="d-flex bg-dark">
+        <span className="text-white m-auto"><strong>Michael Redruello</strong> - Copyright 2021</span>
     </footer>
 )
 

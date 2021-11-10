@@ -1,20 +1,14 @@
-import { Jumbotron, Container, Button } from "react-bootstrap";
-
 import React from "react";
+import { Jumbotron, Button } from "react-bootstrap";
 
-const Jumbotron = () => (
-    <Jumbotron>
-      <h1>Regular, Jumbotron!</h1>
-      <p>
-        This is a simple Jumbotron example.
-      </p>
-  
-      <p>
-        <Button variant="primary">
-          Primary Button
-        </Button>
-      </p>
+export default function Welcome() {
+    return <Jumbotron>
+        <h1>Welcome to StriveBooks</h1>
+        <p>
+        This is the subtitle of StriveBooks.
+        </p>
+        <p>
+        <Button variant="primary">Learn more</Button>
+        </p>
     </Jumbotron>
-)
-
-export default Jumbotron
+}
