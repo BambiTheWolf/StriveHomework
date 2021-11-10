@@ -3,7 +3,7 @@ import Badge from "react-bootstrap/Badge"
 
 class MyBadge extends Component {
     render() {
-        return <Badge className="m-auto" variant={this.props.color}>{this.props.text}</Badge>
+        return <Badge className="badge-component" variant={this.props.color}>{this.props.text}</Badge>
     }
 }
 
