@@ -6,9 +6,9 @@ import { Welcome } from './components/Welcome';
 
 import WarningSign from './components/WarningSign';
 import MyBadge from './components/MyBadge';
-import { SingleBook } from './components/SingleBook'
+import SingleBook from './components/SingleBook'
 import HorrorBooks from './data/horror.json'
-import { BookList } from './components/BookList';
+import BookList from './components/BookList';
 
 
 

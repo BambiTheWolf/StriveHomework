@@ -16,3 +16,7 @@ footer {
 .badge-component {
   padding: 1em;
 }
+
+body { 
+  background-color: rgb(48, 48, 48);
+}
