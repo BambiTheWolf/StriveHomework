@@ -3,9 +3,12 @@ import './App.css';
 import MyNavbar from './components/MyNavbar';
 import MyFooter from './components/MyFooter';
 import { Welcome } from './components/Welcome';
-import LatestReleases from './components/LatestRelease';
+
 import WarningSign from './components/WarningSign';
 import MyBadge from './components/MyBadge';
+import { SingleBook } from './components/SingleBook'
+import HorrorBooks from './data/horror.json'
+import { BookList } from './components/BookList';
 
 
 
@@ -17,7 +20,8 @@ function App() {
       <Welcome />
       <WarningSign name="I'm a warning message!" />
       <MyBadge text="Badge" color="success" />
-      <LatestReleases />
+      <SingleBook book={HorrorBooks[0]} />
+      <BookList books={HorrorBooks} />
     </div>
   );
 }

@@ -12,3 +12,7 @@ footer {
 .book-cover {
   width: 33%;
 }
+
+.badge-component {
+  padding: 1em;
+}
